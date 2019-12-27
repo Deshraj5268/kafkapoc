@@ -1,0 +1,466 @@
+2019-12-28 00:00:43,468 INFO org.springframework.boot.StartupInfoLogger [main] Starting KafkapocApplication on Raj with PID 5152 (G:\project\kafkapractice\kafkapoc\target\classes started by cyber in G:\project\kafkapractice\kafkapoc)
+2019-12-28 00:00:43,484 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-12-28 00:00:48,601 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8888 (http)
+2019-12-28 00:00:48,627 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-28 00:00:48,629 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-12-28 00:00:48,630 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-28 00:00:48,842 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-12-28 00:00:48,843 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5042 ms
+2019-12-28 00:00:49,743 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-28 00:00:50,331 INFO org.apache.kafka.common.config.AbstractConfig [main] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-12-28 00:00:50,898 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka version: 2.3.1
+2019-12-28 00:00:50,907 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka commitId: 18a913733fb71c01
+2019-12-28 00:00:50,909 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1577471450895
+2019-12-28 00:00:51,860 INFO org.apache.kafka.common.config.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafkapoc
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-12-28 00:00:51,992 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka version: 2.3.1
+2019-12-28 00:00:51,993 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka commitId: 18a913733fb71c01
+2019-12-28 00:00:51,994 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1577471451992
+2019-12-28 00:00:51,999 INFO org.apache.kafka.clients.consumer.KafkaConsumer [main] [Consumer clientId=consumer-1, groupId=kafkapoc] Subscribed to topic(s): baeldung
+2019-12-28 00:00:52,006 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService
+2019-12-28 00:00:52,100 INFO org.apache.kafka.clients.Metadata [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Cluster ID: lmgCk0jlRgOJ3e2q4dyV2Q
+2019-12-28 00:00:52,115 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8888"]
+2019-12-28 00:00:52,214 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8888 (http) with context path ''
+2019-12-28 00:00:52,225 INFO org.springframework.boot.StartupInfoLogger [main] Started KafkapocApplication in 11.001 seconds (JVM running for 12.842)
+2019-12-28 00:00:59,352 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Discovered group coordinator Raj:9092 (id: 2147483647 rack: null)
+2019-12-28 00:00:59,358 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Revoking previously assigned partitions []
+2019-12-28 00:00:59,360 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] kafkapoc: partitions revoked: []
+2019-12-28 00:00:59,361 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] (Re-)joining group
+2019-12-28 00:00:59,574 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] (Re-)joining group
+2019-12-28 00:00:59,730 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$1 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Successfully joined group with generation 1
+2019-12-28 00:00:59,738 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Setting newly assigned partitions: baeldung-0
+2019-12-28 00:00:59,799 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator$OffsetFetchResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Found no committed offset for partition baeldung-0
+2019-12-28 00:00:59,850 INFO org.apache.kafka.clients.consumer.internals.SubscriptionState [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Resetting offset for partition baeldung-0 to offset 2.
+2019-12-28 00:00:59,912 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] kafkapoc: partitions assigned: [baeldung-0]
+2019-12-28 00:01:56,000 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8888-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-28 00:01:56,001 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8888-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-12-28 00:01:56,018 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8888-exec-1] Completed initialization in 16 ms
+2019-12-28 00:02:08,136 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [kafka-coordinator-heartbeat-thread | kafkapoc] [Consumer clientId=consumer-1, groupId=kafkapoc] Group coordinator Raj:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2019-12-28 00:02:08,158 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Discovered group coordinator Raj:9092 (id: 2147483647 rack: null)
+2019-12-28 00:02:08,158 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Group coordinator Raj:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2019-12-28 00:02:08,162 INFO org.apache.kafka.common.config.AbstractConfig [http-nio-8888-exec-1] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-12-28 00:02:08,275 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Discovered group coordinator Raj:9092 (id: 2147483647 rack: null)
+2019-12-28 00:02:08,291 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$HeartbeatResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Attempt to heartbeat failed for since member id consumer-1-da03d352-bd5c-4962-8cd5-b819f2eb7d2f is not valid.
+2019-12-28 00:02:08,292 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Revoking previously assigned partitions [baeldung-0]
+2019-12-28 00:02:08,293 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] kafkapoc: partitions revoked: [baeldung-0]
+2019-12-28 00:02:08,293 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] (Re-)joining group
+2019-12-28 00:02:08,307 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] (Re-)joining group
+2019-12-28 00:02:08,332 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$1 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Successfully joined group with generation 3
+2019-12-28 00:02:08,334 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Setting newly assigned partitions: baeldung-0
+2019-12-28 00:02:08,353 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Setting offset for partition baeldung-0 to the committed offset FetchPosition{offset=2, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Raj:9092 (id: 0 rack: null), epoch=0}}
+2019-12-28 00:02:08,377 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [http-nio-8888-exec-1] Kafka version: 2.3.1
+2019-12-28 00:02:08,377 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [http-nio-8888-exec-1] Kafka commitId: 18a913733fb71c01
+2019-12-28 00:02:08,378 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [http-nio-8888-exec-1] Kafka startTimeMs: 1577471528376
+2019-12-28 00:02:08,496 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: lmgCk0jlRgOJ3e2q4dyV2Q
+2019-12-28 00:02:08,754 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] kafkapoc: partitions assigned: [baeldung-0]
+2019-12-28 00:16:29,285 INFO org.springframework.boot.StartupInfoLogger [main] Starting KafkapocApplication on Raj with PID 12232 (G:\project\kafkapractice\kafkapoc\target\classes started by cyber in G:\project\kafkapractice\kafkapoc)
+2019-12-28 00:16:29,296 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-12-28 00:16:34,567 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8888 (http)
+2019-12-28 00:16:34,632 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8888"]
+2019-12-28 00:16:34,634 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-12-28 00:16:34,634 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.29]
+2019-12-28 00:16:35,043 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-12-28 00:16:35,044 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 5524 ms
+2019-12-28 00:16:35,895 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-28 00:16:37,334 INFO org.apache.kafka.common.config.AbstractConfig [main] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-12-28 00:16:37,807 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka version: 2.3.1
+2019-12-28 00:16:37,811 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka commitId: 18a913733fb71c01
+2019-12-28 00:16:37,812 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1577472397802
+2019-12-28 00:16:38,414 INFO org.apache.kafka.common.config.AbstractConfig [main] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = default
+	client.id = 
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = kafkapoc
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2019-12-28 00:16:38,503 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka version: 2.3.1
+2019-12-28 00:16:38,504 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka commitId: 18a913733fb71c01
+2019-12-28 00:16:38,505 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1577472398503
+2019-12-28 00:16:38,508 INFO org.apache.kafka.clients.consumer.KafkaConsumer [main] [Consumer clientId=consumer-1, groupId=kafkapoc] Subscribed to topic(s): baeldung
+2019-12-28 00:16:38,512 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService
+2019-12-28 00:16:38,552 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8888"]
+2019-12-28 00:16:38,577 INFO org.apache.kafka.clients.Metadata [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Cluster ID: lmgCk0jlRgOJ3e2q4dyV2Q
+2019-12-28 00:16:38,579 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$FindCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Discovered group coordinator Raj:9092 (id: 2147483647 rack: null)
+2019-12-28 00:16:38,590 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Revoking previously assigned partitions []
+2019-12-28 00:16:38,592 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] kafkapoc: partitions revoked: []
+2019-12-28 00:16:38,593 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] (Re-)joining group
+2019-12-28 00:16:38,615 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] (Re-)joining group
+2019-12-28 00:16:38,628 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8888 (http) with context path ''
+2019-12-28 00:16:38,664 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$1 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Successfully joined group with generation 5
+2019-12-28 00:16:38,675 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Setting newly assigned partitions: baeldung-0
+2019-12-28 00:16:38,725 INFO org.springframework.boot.StartupInfoLogger [main] Started KafkapocApplication in 11.712 seconds (JVM running for 13.055)
+2019-12-28 00:16:38,737 INFO org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Setting offset for partition baeldung-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Raj:9092 (id: 0 rack: null), epoch=0}}
+2019-12-28 00:16:38,757 INFO org.springframework.core.log.LogAccessor [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] kafkapoc: partitions assigned: [baeldung-0]
+2019-12-28 00:17:11,445 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8888-exec-8] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-28 00:17:11,445 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8888-exec-8] Initializing Servlet 'dispatcherServlet'
+2019-12-28 00:17:11,466 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8888-exec-8] Completed initialization in 20 ms
+2019-12-28 00:17:40,711 INFO org.apache.kafka.common.config.AbstractConfig [http-nio-8888-exec-6] ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-12-28 00:17:40,762 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [http-nio-8888-exec-6] Kafka version: 2.3.1
+2019-12-28 00:17:40,766 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [http-nio-8888-exec-6] Kafka commitId: 18a913733fb71c01
+2019-12-28 00:17:40,767 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [http-nio-8888-exec-6] Kafka startTimeMs: 1577472460761
+2019-12-28 00:17:40,783 INFO org.apache.kafka.clients.Metadata [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Cluster ID: lmgCk0jlRgOJ3e2q4dyV2Q
+2019-12-28 00:17:40,826 ERROR raj.com.kafkapoc.producer.MessagePublisher$1 [kafka-producer-network-thread | producer-1] Sent message=[finaltest] with offset=[3]
+2019-12-28 00:17:40,840 ERROR raj.com.kafkapoc.consumer.MessageConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Received messages in group kafkapoc: finaltest
+2019-12-28 00:18:11,919 INFO org.apache.kafka.clients.FetchSessionHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Error sending fetch request (sessionId=16612024, epoch=184) to node 0: org.apache.kafka.common.errors.DisconnectException.
+2019-12-28 00:18:11,925 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Group coordinator Raj:9092 (id: 2147483647 rack: null) is unavailable or invalid, will attempt rediscovery
+2019-12-28 00:18:13,980 WARN org.apache.kafka.clients.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Connection to node 0 (Raj/192.168.0.101:9092) could not be established. Broker may not be available.
+2019-12-28 00:18:14,031 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (Raj/192.168.0.101:9092) could not be established. Broker may not be available.
+2019-12-28 00:18:16,086 WARN org.apache.kafka.clients.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Connection to node 0 (Raj/192.168.0.101:9092) could not be established. Broker may not be available.
+2019-12-28 00:18:16,185 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (Raj/192.168.0.101:9092) could not be established. Broker may not be available.
+2019-12-28 00:18:18,340 WARN org.apache.kafka.clients.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Connection to node 0 (Raj/192.168.0.101:9092) could not be established. Broker may not be available.
+2019-12-28 00:18:18,438 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (Raj/192.168.0.101:9092) could not be established. Broker may not be available.
+2019-12-28 00:18:20,796 WARN org.apache.kafka.clients.NetworkClient [kafka-producer-network-thread | producer-1] [Producer clientId=producer-1] Connection to node 0 (Raj/192.168.0.101:9092) could not be established. Broker may not be available.
+2019-12-28 00:18:20,799 WARN org.apache.kafka.clients.NetworkClient [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Consumer clientId=consumer-1, groupId=kafkapoc] Connection to node 0 (Raj/192.168.0.101:9092) could not be established. Broker may not be available.
