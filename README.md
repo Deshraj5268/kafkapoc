@@ -1,5 +1,4 @@
-# kafkapoc
-kafkapoc
+# kafkaproject
 
 Once you download Kafka, you can issue a command to start ZooKeeper which is used by Kafka to store metadata.
 
